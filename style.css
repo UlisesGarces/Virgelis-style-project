@@ -1,3 +1,4 @@
+/* fontes */
 @font-face {
   font-family: "poppins";
   src: url(fonts/Poppins-Medium.ttf);
@@ -6,42 +7,48 @@
   font-family: "poppinslight";
   src: url(fonts/Poppins-Light.ttf);
 }
+/* cores */
+:root {
+  --core-header: rgb(236, 234, 234);
+  --cores-fontes: blueviolet;
+  --cores-buttons: rgb(255, 255, 255);
+}
+/* general */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: poppins;
 }
-.navigation {
-  display: flex;
-  gap: 50px;
+html {
+  font-size: 62.5%;
 }
+/* header*/
+
 .header {
-  padding: 20px;
+  padding: 1rem;
   display: flex;
-  color: blueviolet;
-  background-color: rgb(236, 234, 234);
+  color: var(--cores-fontes);
+  background-color: var(--core-header);
   justify-content: space-between;
 }
-.aa,
-.bbb,
-.cccc {
-  background-color: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 30px;
-}
-.main-page {
-  text-align: center;
-  padding: 120px;
-}
-footer {
-  color: aliceblue;
-  background-color: black;
-  padding: 50px;
-  font-family: poppinslight;
-}
-.flex-footer {
+.navigation {
   display: flex;
-  gap: 200px;
-  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.home,
+.sobre--min,
+.contato {
+  background-color: var(--cores-buttons);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.temporal--logo {
+  font-size: 3rem;
+}
+/* main */
+.title {
+  margin-top: 1.5rem;
+  text-align: center;
 }
