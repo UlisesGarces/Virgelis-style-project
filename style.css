@@ -9,8 +9,9 @@
 }
 /* cores */
 :root {
-  --core-header: rgb(236, 234, 234);
-  --cores-fontes: rgba(137, 43, 226, 0.764);
+  --core-black: rgb(0, 0, 0);
+  --core-header: rgb(218, 211, 175);
+  --cores-fontes: rgba(67, 44, 2, 0.764);
   --cores-buttons: rgb(255, 255, 255);
   --cores--letras: azure;
 }
@@ -27,45 +28,81 @@ html {
 /* header*/
 
 .header {
-  padding: 1rem;
+  z-index: 100; /* gives priority to the element */
+  width: 100%;
+  top: 0%;
+  position: fixed;
+  padding: 2rem;
   display: flex;
   color: var(--cores-fontes);
   background-color: var(--core-header);
   justify-content: space-between;
+  transform: 0.6s;
 }
 .navigation {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
+
 .home,
 .sobre--min,
 .contato {
-  font-size: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
   background-color: var(--cores-buttons);
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  transition: 0.4s;
+}
+a {
+  color: inherit;
+}
+.home:hover {
+  color: var(--core-black);
+  border-radius: 7rem;
+  transform: scale(1.2);
+}
+.sobre--min:hover {
+  color: var(--core-black);
+  border-radius: 7rem;
+  transform: scale(1.2);
+  /*  padding: 1.5rem; */
+}
+.contato:hover {
+  color: var(--core-black);
+  border-radius: 7rem;
+  transform: scale(1.2);
 }
 .temporal--logo {
+  position: relative;
   font-size: 3rem;
 }
+
 /* main */
+
 .title {
   margin-top: 1.8rem;
   font-size: 1.5rem;
   text-align: center;
+  padding: 20rem;
+  background-image: url(img/pexels-nataliya-vaitkevich-8468019.jpg);
+  background-size: 100%;
+  color: var(--cores-black);
+  background-repeat: no-repeat;
 }
 
 /* carrusel */
 .carrusel {
   position: relative;
-  background-color: var(--cores-fontes);
+  background-color: var(--core-black);
   margin: 5rem;
   padding: 6rem;
   /* display flex */
   display: flex;
   border-radius: 1rem;
-  gap: 2rem;
+  gap: 0.2rem;
 }
 
 .cliente {
@@ -86,7 +123,7 @@ html {
 }
 
 .content {
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
