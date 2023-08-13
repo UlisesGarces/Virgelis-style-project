@@ -10,9 +10,9 @@
 /* cores */
 :root {
   --core-black: rgb(0, 0, 0);
-  --core-header: rgb(218, 211, 175);
+  --core-header: rgb(246, 238, 217);
   --cores-fontes: rgba(67, 44, 2, 0.764);
-  --cores-buttons: rgb(255, 255, 255);
+  --cores-buttons: rgb(255, 228, 190);
   --cores--letras: azure;
 }
 /* general */
@@ -51,7 +51,7 @@ html {
 .contato {
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: var(--cores-buttons);
+  background-color: var(--cores--header);
   padding: 0.7rem;
   border-radius: 2rem;
   transition: 0.4s;
@@ -61,17 +61,20 @@ a {
 }
 .home:hover {
   color: var(--core-black);
+  background-color: var(--cores-buttons);
   border-radius: 7rem;
   transform: scale(1.2);
 }
 .sobre--min:hover {
   color: var(--core-black);
+  background-color: var(--cores-buttons);
   border-radius: 7rem;
   transform: scale(1.2);
   /*  padding: 1.5rem; */
 }
 .contato:hover {
   color: var(--core-black);
+  background-color: var(--cores-buttons);
   border-radius: 7rem;
   transform: scale(1.2);
 }
@@ -82,17 +85,22 @@ a {
 
 /* main */
 
-.title {
+.title-img {
   margin-top: 1.8rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
   padding: 20rem;
   background-image: url(img/pexels-nataliya-vaitkevich-8468019.jpg);
   background-size: 100%;
-  color: var(--cores-black);
+  color: black;
+  filter: contrast(90%);
+
   background-repeat: no-repeat;
 }
 
+.title h1 {
+  margin-left: 1.6rem;
+}
 /* carrusel */
 .carrusel {
   position: relative;
