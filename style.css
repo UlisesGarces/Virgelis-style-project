@@ -10,8 +10,9 @@
 /* cores */
 :root {
   --core-header: rgb(236, 234, 234);
-  --cores-fontes: blueviolet;
+  --cores-fontes: rgba(137, 43, 226, 0.764);
   --cores-buttons: rgb(255, 255, 255);
+  --cores--letras: azure;
 }
 /* general */
 * {
@@ -40,6 +41,7 @@ html {
 .home,
 .sobre--min,
 .contato {
+  font-size: 2rem;
   background-color: var(--cores-buttons);
   padding: 1rem;
   border-radius: 1rem;
@@ -49,6 +51,60 @@ html {
 }
 /* main */
 .title {
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
+}
+
+/* carrusel */
+.carrusel {
+  position: relative;
+  background-color: var(--cores-fontes);
+  margin: 5rem;
+  padding: 6rem;
+  /* display flex */
+  display: flex;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.cliente {
+  border-radius: 1rem;
+  width: 15rem;
+  transform: scale(1.5);
+}
+.btn {
+  border-radius: 1rem;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.112);
+  border: 1px solid var(--cores-fontes);
+  box-shadow: 0 0 5px var(--core-header);
+  cursor: pointer;
+}
+.ico {
+  width: 4rem;
+}
+
+.content {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  color: var(--cores--letras);
+  padding: 5rem;
+  line-height: 1.2;
+}
+
+/* move button */
+
+.button--right {
+  right: 0;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+.button--left {
+  left: 0;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
 }
