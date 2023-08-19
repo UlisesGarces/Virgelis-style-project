@@ -21,11 +21,12 @@
   padding: 0;
   margin: 0;
   font-family: poppins;
+  text-decoration: none;
 }
 html {
   font-size: 62.5%;
 }
-/* header*/
+/*The main header and navigation*/
 
 .header {
   z-index: 100; /* gives priority to the element */
@@ -83,8 +84,12 @@ a {
   font-size: 3rem;
 }
 
-/* main */
-
+/* The main Page*/
+.preço {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
 .title-img {
   margin-top: 1.8rem;
   font-size: 1.7rem;
@@ -98,10 +103,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.title h1 {
-  margin-left: 1.6rem;
-}
-/* carrusel */
+/*This is the carrusel */
 .carrusel {
   position: relative;
   background-color: var(--core-black);
@@ -140,7 +142,7 @@ a {
   line-height: 1.2;
 }
 
-/* move button */
+/*move button */
 
 .button--right {
   right: 0;
@@ -152,4 +154,78 @@ a {
   left: 0;
   bottom: 50%;
   transform: translate(-50%, 50%);
+}
+
+/*The Footer*/
+.footer-container {
+  font-family: poppins;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: #bdaa87;
+  padding-top: 3rem;
+  padding-bottom: 1;
+  background-color: #363120;
+  gap: 20rem;
+  font-size: 1.3rem;
+  border-bottom: solid 1px #bdaa87;
+}
+/*content inside footer*/
+.logo-footer {
+  font-size: 3rem;
+}
+.info {
+  font-size: 1.3rem;
+}
+#info-title {
+  margin-bottom: 20px;
+}
+
+.footer-btns {
+  padding: 20px;
+}
+button {
+  margin-right: 10px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer-icon1 {
+  border-style: none;
+
+  border-radius: 120px;
+  width: 40px;
+}
+.footer-icon2 {
+  border-style: none;
+
+  border-radius: 120px;
+  width: 45px;
+}
+.footer-icon3 {
+  border-style: none;
+  background-color: #a58f6d;
+  border-radius: 120px;
+  width: 45px;
+  padding: 8px;
+}
+.footer-icon1,
+.footer-icon2,
+.footer-icon3 {
+  transition: all 0.5s;
+}
+
+.footer-icon1:hover,
+.footer-icon2:hover,
+.footer-icon3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/*Copyright*/
+.footer-of-footer {
+  color: #bdaa87;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+  background-color: #363120;
 }
