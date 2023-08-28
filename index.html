@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="cod.js"></script>
-    <title>Virgelis style</title>
+    <script defer src="script.js"></script>
+    <title>Virgelis Style</title>
   </head>
   <body>
+    <!--header include stiky nav  -->
     <header>
       <div class="header">
-        <h3 class="temporal--logo">logo</h3>
+        <img src="img/logo4-preview.png" alt="logo virgelis" class="logo-img" />
         <nav class="navigation">
           <a href="#" class="home">Preços</a>
           <a href="#" class="sobre--min">sobre mim</a>
@@ -18,56 +19,130 @@
         </nav>
       </div>
     </header>
+    <!-- open main -->
     <main class="page">
-      <div class="title-img">
+      <!-- information  -->
+      <section class="section--1">
+        <!-- background is increase by css but here it's one div line -->
+        <div class="background-img"></div>
         <div class="title">
           <h1>Alisamento de calidade</h1>
           <p>A um preço accessível, conquistando seu novo look!</p>
         </div>
-      </div>
-
-      <div class="preço">
-        <p></p>
-        <p>
-          Invista menos tempo no seu alisamento e venha alisar e hidratar seus
-          cabelos.
-        </p>
-        <p>Faz uma consultoria comigo!</p>
-
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
+        <div class="preço">
+          <p>
+            Invista menos tempo no seu alisamento e venha alisar e hidratar seus
+            cabelos.
+          </p>
+          <p>Faz uma consultoria comigo!</p>
+        </div>
+      </section>
       <!--Carrusel-->
-      <div class="carrusel">
-        <img class="cliente" src="img/images.jpeg" alt="Cliente" />
-        <blockquote class="content">
-          <h1 class="resultado">Resultados</h1>
-          <p>I'm very satified with this product.</p>
-        </blockquote>
-        <img class="cliente" src="img/images.jpeg" alt="Cliente" />
-        <blockquote class="content">
-          <h1 class="resultado">Resultados</h1>
-          <p>I'm very satified with this product.</p>
-        </blockquote>
-        <img class="cliente" src="img/images.jpeg" alt="Cliente" />
-        <blockquote class="content">
-          <h1 class="resultado">Resultados</h1>
-          <p>I'm very satified with this product.</p>
-        </blockquote>
-        <button class="btn button--left">
-          <img class="ico" alt="ico" src="img/left.svg" />
-        </button>
-        <button class="btn button--right">
-          <img class="ico" alt="ico" src="img/right.svg" />
-        </button>
-      </div>
+      <section class="section--2">
+        <div class="slider">
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente1.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">VALERIA</h1>
+              <p>Estou apaixonada com meu cabelo, Muito obrigada.</p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente6.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">SURY</h1>
+              <p>
+                Aplicaram a progressiva antes e meu cabelo nunca ficou assim,
+                estou feliz com meu cabelo.
+              </p>
+            </blockquote>
+          </div>
+
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente2.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">LAURA</h1>
+              <p>Adorei meu cabelo, estou feliz.</p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente3.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">YULEXI</h1>
+              <p>Meu cabelo ficou maravilhoso.</p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente5.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">DANIELA</h1>
+              <p>Obrigada Amei meu cabelo.</p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente7.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">ANAÍS</h1>
+              <p>
+                Meu cabelo está muito bom, em 3 meses vou retocar minha raiz
+                novamente.
+              </p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente8.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">LEONELA</h1>
+              <p>
+                Meu cabelo está fabuloso, voltarei em 3 meses com certeza, estou
+                amando meu cabelo.
+              </p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente10.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">ESTER</h1>
+              <p>
+                Meu cabelo está perfeito, já lavei várias vezes e está liso, cem
+                por cento satisfeita.
+              </p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img src="img/logo3-preview.png" alt="logo" class="logo-card" />
+            <img class="img_card" src="clientes/cliente11.jpg" alt="Cliente" />
+            <blockquote class="content">
+              <h1 class="resultado">LETICIA</h1>
+              <p>Eu amei muito o resultado.</p>
+            </blockquote>
+          </div>
+          <button class="btn button--right">
+            <img class="ico" alt="ico" src="img/right.svg" />
+          </button>
+          <button class="btn button--left">
+            <img class="ico" alt="ico" src="img/left.svg" />
+          </button>
+        </div>
+      </section>
     </main>
+    <!-- finish main open footer -->
     <footer class="footer">
-      >
       <div class="footer-container">
         <div class="logo-footer">
-          <h3>Logo</h3>
+          <img
+            src="img/logo2-preview.png"
+            alt="logo footer"
+            class="logo-footer logo-img"
+          />
         </div>
         <div class="info">
           <h3 id="info-title">Contato</h3>
