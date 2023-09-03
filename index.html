@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <title>Virgelis Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--header include stiky nav  -->
@@ -14,8 +20,7 @@
         <img src="img/logo4-preview.png" alt="logo virgelis" class="logo-img" />
         <nav class="navigation">
           <a href="#" class="home">Preços</a>
-          <a href="#" class="sobre--min">sobre mim</a>
-          <a href="#" class="contato">contato</a>
+          <a href="#" class="contato card--contact--show">contato</a>
         </nav>
       </div>
     </header>
@@ -180,5 +185,37 @@
         </p>
       </div>
     </footer>
+    <div class="card__contact hidden">
+      <img
+        src="img/text_logo_card.png"
+        class="card__contact--logo"
+        alt="logo"
+      />
+      <button class="card__contact__btn--close">&times;</button>
+      <ul class="card__contact--ul">
+        <li class="card__contact--list">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="icons/whatsapp.png" alt="whatsap" class="icons__card" />
+            2317-203-2039
+          </a>
+        </li>
+        <li class="card__contact--list">
+          <a href="https://mail.google.com/mail/u/0/" target="_blank">
+            <img src="icons/gmail.png" alt="gmail" class="icons__card" />
+            emailvirgelis@gmail.com
+          </a>
+        </li>
+        <li class="card__contact--list">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="icons/instagram.png"
+              alt=""
+              class="icons__card"
+            />VirgelisStyle
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="background__blur hidden"></div>
   </body>
 </html>
