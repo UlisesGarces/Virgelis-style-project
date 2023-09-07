@@ -7,6 +7,10 @@
   font-family: "poppinslight";
   src: url(fonts/Poppins-Light.ttf);
 }
+@font-face {
+  font-family: "poppinsbold";
+  src: url(fonts/Poppins-ExtraBold.ttf);
+}
 /* cores */
 :root {
   --core-black: rgb(0, 0, 0);
@@ -91,6 +95,7 @@ a {
 .preço {
   font-size: 1.5rem;
   padding: 10px;
+  margin-bottom: 15rem;
   text-align: center;
 }
 
@@ -103,7 +108,7 @@ a {
   width: 100%;
   height: 100%;
   filter: grayscale(60%);
-  filter: brightness(35%);
+  filter: brightness(90%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -119,6 +124,82 @@ a {
   font-size: 2.5rem;
   color: var(--cores--letras);
 }
+/*-----------------------Price section---------------------------*/
+
+.Price-section {
+  position: relative;
+  justify-content: space-between;
+
+  display: flex;
+  padding: 50px;
+  background-color: rgb(255, 235, 192);
+  height: 40rem;
+}
+.rs {
+  font-size: 40px;
+  font-family: poppinsbold;
+}
+.Price-box {
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px;
+  width: 200px;
+
+  margin-bottom: 50px;
+  background-color: rgb(255, 162, 0);
+}
+.Typewr-H1 {
+  font-size: 20px;
+  display: inline-block;
+}
+.Typewr-effect {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.Mastercard-ways img {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+.crcl-deco {
+  z-index: 2;
+  right: 23px;
+  top: 300px;
+  width: fit-content;
+  content: "";
+  border-radius: 50px;
+  background-color: rgb(255, 162, 0);
+  padding: 30px;
+  position: absolute;
+  position: absolute;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 174, 0);
+  }
+}
+
+/*--------------------------end of Section--------------------------------*/
 /*This is the carrusel */
 /* -------------------------------------------------- */
 
@@ -260,6 +341,13 @@ button {
   width: 45px;
 }
 .footer-icon3 {
+  border-style: none;
+  background-color: #a58f6d;
+  border-radius: 120px;
+  width: 45px;
+  padding: 8px;
+}
+.footer-icon4 {
   border-style: none;
   background-color: #a58f6d;
   border-radius: 120px;
