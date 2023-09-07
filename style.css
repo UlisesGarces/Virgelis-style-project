@@ -8,22 +8,28 @@
   src: url(fonts/Poppins-Light.ttf);
 }
 @font-face {
-
   font-family: "poppinsbold";
   src: url(fonts/Poppins-ExtraBold.ttf);
-
 }
 /* cores */
 :root {
   --core-black: rgb(0, 0, 0);
-  --core-header: rgb(246, 238, 217);
-  --cores-fontes: rgba(67, 44, 2, 0.764);
-  --cores-buttons: rgb(255, 228, 190);
+  --core-header: rgb(255, 244, 221);
+  --cores-fontes: rgb(255, 162, 0);
+  --cores-buttons: rgb(255, 188, 94);
   --cores--letras: azure;
-  --cores--amarelo: rgb(255, 247, 164);
+  --cores--amarelo: rgb(255, 241, 84);
 }
 /* general */
 * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  text-decoration: none;
+}
+html,
+body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -57,10 +63,10 @@ html {
   width: 13rem;
 }
 .home,
-.sobre--min,
 .contato {
   text-decoration: none;
   font-size: 1.7rem;
+
   background-color: var(--cores--header);
   padding: 0.7rem;
   border-radius: 2rem;
@@ -74,62 +80,49 @@ a {
   background-color: var(--cores-buttons);
   border-radius: 7rem;
   transform: scale(1.2);
+  color: white;
 }
-.sobre--min:hover {
-  color: var(--core-black);
-  background-color: var(--cores-buttons);
-  border-radius: 7rem;
-  transform: scale(1.2);
-  /*  padding: 1.5rem; */
-}
+
 .contato:hover {
   color: var(--core-black);
   background-color: var(--cores-buttons);
   border-radius: 7rem;
   transform: scale(1.2);
+  color: white;
 }
 .logo {
   position: relative;
   width: 30rem;
 }
 
-/* The main Title*/
-.preço {
-  font-size: 1.5rem;
+/* ----------------------------The main Title*/
 
-  padding: 10px;
-  margin-bottom: 15rem;
-
-  text-align: center;
-  margin-bottom: 2rem;
+.testt {
+  background-color: rgb(255, 247, 233);
 }
 
-.background-img {
-  position: fixed;
-  z-index: -1;
-  padding: 20rem;
-  background-image: url(img/pexels-nataliya-vaitkevich-8468019.jpg);
-  top: 0;
-  width: 100%;
-  height: 100%;
-
-  filter: grayscale(60%);
-
-  filter: brightness(90%);
+/* .testt {
+    background-image: url(img/pexels-nataliya-vaitkevich-8468019.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+
+  background-repeat: no-repeat; 
+} */
+.preço {
+  font-size: 2.5rem;
+
+  text-align: center;
 }
 
 .title {
-  margin-top: 20rem;
+  z-index: 1;
   font-size: 3.4rem;
-  font-weight: 700;
+  padding: 16rem;
+
   text-align: center;
-  color: rgb(255, 236, 200);
+  color: rgb(255, 166, 0);
 }
 .preço > p {
-  font-size: 2.5rem;
-  color: var(--cores--letras);
+  color: rgb(0, 0, 0);
 }
 
 /*-----------------------Price section---------------------------*/
@@ -166,13 +159,13 @@ a {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-.Mastercard-ways img {
-  width: 300px;
+/* .Mastercard-ways img {
+  width: 35rem;
   position: relative;
   z-index: 1;
-}
+} */
 .crcl-deco {
   z-index: 2;
   right: 23px;
@@ -196,7 +189,6 @@ a {
     width: 100%;
   }
 }
-
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
@@ -312,13 +304,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: start;
-  color: #bdaa87;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  background-color: #363120;
+  color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--cores-fontes);
   gap: 20rem;
   font-size: 1.3rem;
-  border-bottom: solid 1px #bdaa87;
+  border-bottom: solid 1px #ffffff;
 }
 /*content inside footer*/
 .logo-footer {
@@ -330,7 +322,9 @@ a {
 #info-title {
   margin-bottom: 10px;
 }
-
+#info-list {
+  margin-left: 2rem;
+}
 .footer-btns {
   padding-top: 1rem;
 }
@@ -355,7 +349,7 @@ button {
   border-style: none;
   background-color: #a58f6d;
   border-radius: 120px;
-  width: 45px;
+  width: 42px;
   padding: 8px;
 }
 .footer-icon4 {
@@ -379,12 +373,12 @@ button {
 }
 /*Copyright*/
 .footer-of-footer {
-  color: #bdaa87;
+  color: #ffffff;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 10px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
-  background-color: #363120;
+  background-color: var(--cores-fontes);
 }
 
 /*===============card contact */
@@ -411,7 +405,7 @@ button {
   right: 0;
   top: 57%;
   left: 0;
-  background-color: #ff84ea6b;
+  background-color: #ffa6006b;
   z-index: -1;
 }
 .card__contact--logo {
@@ -471,4 +465,46 @@ button {
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+/*================*/
+
+@media (max-width: 50em) {
+  .Mastercard-ways img {
+    display: none;
+  }
+  .preço {
+    display: none;
+  }
+  #title-last-child {
+    font-size: 2.5rem;
+    color: #363120;
+  }
+}
+
+@media (max-width: 52.375em) {
+  .footer-container {
+    gap: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+@media (max-width: 39.0625em) {
+  .footer-container {
+    gap: 2.5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+@media (max-width: 31.5em) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .footer-container {
+    gap: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .logo-footer {
+    display: none;
+  }
 }

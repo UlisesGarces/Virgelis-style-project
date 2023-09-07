@@ -1,5 +1,5 @@
 "strict mode";
-const PriceSection = document.querySelector(".Price-section");
+const PriceBox = document.querySelector(".Price-box");
 const H1Class = document.querySelector(".h1-class");
 
 const observer = new IntersectionObserver(function (entries) {
@@ -7,4 +7,4 @@ const observer = new IntersectionObserver(function (entries) {
     H1Class.classList.add("Typewr-effect");
   }
 });
-observer.observe(PriceSection);
+observer.observe(PriceBox);
