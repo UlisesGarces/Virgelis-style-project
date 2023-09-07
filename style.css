@@ -8,8 +8,10 @@
   src: url(fonts/Poppins-Light.ttf);
 }
 @font-face {
+
   font-family: "poppinsbold";
   src: url(fonts/Poppins-ExtraBold.ttf);
+
 }
 /* cores */
 :root {
@@ -29,7 +31,7 @@
   text-decoration: none;
 }
 html {
-  font-size: 62.5%;
+  font-size: 56.5%;
 }
 /*The main header and navigation*/
 
@@ -52,7 +54,7 @@ html {
   gap: 2rem;
 }
 .logo-img {
-  width: 10rem;
+  width: 13rem;
 }
 .home,
 .sobre--min,
@@ -91,12 +93,15 @@ a {
   width: 30rem;
 }
 
-/* The main Page*/
+/* The main Title*/
 .preço {
   font-size: 1.5rem;
+
   padding: 10px;
   margin-bottom: 15rem;
+
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .background-img {
@@ -107,7 +112,9 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+
   filter: grayscale(60%);
+
   filter: brightness(90%);
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,12 +125,13 @@ a {
   font-size: 3.4rem;
   font-weight: 700;
   text-align: center;
-  color: var(--cores--amarelo);
+  color: rgb(255, 236, 200);
 }
 .preço > p {
   font-size: 2.5rem;
   color: var(--cores--letras);
 }
+
 /*-----------------------Price section---------------------------*/
 
 .Price-section {
@@ -179,6 +187,7 @@ a {
 }
 
 /* The typing effect */
+
 @keyframes typing {
   from {
     width: 0;
@@ -187,6 +196,7 @@ a {
     width: 100%;
   }
 }
+
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
@@ -200,6 +210,7 @@ a {
 }
 
 /*--------------------------end of Section--------------------------------*/
+
 /*This is the carrusel */
 /* -------------------------------------------------- */
 
@@ -300,7 +311,7 @@ a {
   font-family: poppins;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: start;
   color: #bdaa87;
   padding-top: 3rem;
   padding-bottom: 1rem;
@@ -311,13 +322,13 @@ a {
 }
 /*content inside footer*/
 .logo-footer {
-  font-size: 3rem;
+  width: 15rem;
 }
 .info {
   font-size: 1.3rem;
 }
 #info-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-btns {
