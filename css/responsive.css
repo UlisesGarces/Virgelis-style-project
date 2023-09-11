@@ -1,0 +1,328 @@
+@media (max-width: 76em) {
+  .video {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 70em) {
+  .video {
+    display: none;
+  }
+}
+
+@media (max-width: 50em) {
+  .Mastercard-ways img {
+    display: none;
+  }
+  .preço {
+    display: none;
+  }
+  #title-last-child {
+    font-size: 2.5rem;
+    color: #363120;
+  }
+}
+
+@media (max-width: 52.375em) {
+  .footer-container {
+    gap: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+@media (max-width: 40.5em) {
+  .footer-container {
+    gap: 2.5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .logo-footer {
+      display: none;
+    }
+  }
+  .header {
+    z-index: 100000; /* gives priority to the element */
+    width: 100%;
+    top: 0%;
+    border-bottom: 1px solid var(--cores-buttons);
+    position: fixed;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .logo-img {
+    width: 13rem;
+  }
+  .home,
+  .contato {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--cores--letras);
+    background-color: var(--cores-buttons);
+    padding: 1.5rem;
+  }
+  .section--1 {
+    margin-top: 22rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: start;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
+    padding: 0;
+    font-size: 1rem;
+  }
+  #title-last-child {
+    font-size: 2rem;
+    color: #363120;
+  }
+
+  .Price-section {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    height: 20rem;
+  }
+  .rs {
+    font-size: 4rem;
+  }
+  .Price-box {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+    width: 15rem;
+    margin-bottom: 3rem;
+  }
+  .Typewr-H1 {
+    font-size: 1.5rem;
+  }
+  .crcl-deco {
+    z-index: 2;
+    right: 5rem;
+    top: 11rem;
+    width: fit-content;
+    content: "";
+    border-radius: 50px;
+    background-color: #ffa200b9;
+    padding: 1rem;
+    position: absolute;
+  }
+
+  /* ======================================= */
+  .slider {
+    max-width: 100rem;
+    height: 50rem;
+    margin: 2rem 2rem;
+    position: relative;
+    background-color: var(--cores-fontes);
+    border-radius: 1rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .logo-card {
+    position: absolute;
+    top: 2rem;
+    left: 20%;
+    width: 5rem;
+    z-index: 1;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 3rem;
+    position: absolute;
+    top: 0;
+    height: 40rem;
+    gap: 2rem;
+    border-radius: 2%;
+    transition: transform 1s;
+    align-items: center;
+  }
+
+  .content {
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    color: var(--cores--letras);
+    line-height: 1.2;
+  }
+  .resultado {
+    position: relative;
+    font-size: 3rem;
+    color: var(--core-header);
+  }
+
+  .content::before {
+    display: none;
+  }
+  .img_card {
+    object-fit: cover;
+    box-shadow: 0 0 1px var(--core-black);
+    width: 15rem;
+    height: 22rem;
+    border-radius: 10%;
+  }
+
+  .btn {
+    z-index: 10;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.112);
+    border: 1px solid var(--cores-fontes);
+    box-shadow: 0 0 5px var(--core-header);
+    cursor: pointer;
+  }
+  .ico {
+    width: 5rem;
+  }
+
+  /*move button */
+
+  .button--right {
+    right: 10%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  .button--left {
+    left: 11%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  /* -------------------------------------------------- */
+  /*The Footer*/
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    font-family: poppins;
+    color: #ffffff;
+    background-color: var(--cores-fontes);
+    font-size: 2rem;
+    height: 23rem;
+  }
+  /*content inside footer*/
+
+  .info {
+    align-self: baseline;
+    padding: 1.5rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: #916c1e85;
+    color: var(--core-black);
+  }
+  #info-title {
+    margin-bottom: 0;
+  }
+  #info-list {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  .footer-btns {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  button {
+    margin-right: 0;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /*Copyright*/
+  .footer-of-footer {
+    font-size: 1.5rem;
+  }
+
+  /*===============card contact */
+  .card__contact {
+    border-radius: 10px;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 25rem;
+    background-color: var(--core-header);
+    padding: 2rem 2rem;
+    z-index: 1000;
+    transition: all 0.9s;
+    display: flex;
+    flex-direction: column;
+  }
+  .card__contact::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 33%;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .card__contact--logo {
+    align-self: center;
+    width: 15rem;
+    margin-bottom: 1%;
+  }
+
+  .background__blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2a393980;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    transition: all 0.5s;
+  }
+  .card__contact--list > a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  .icons__card {
+    margin-right: 1rem;
+    width: 4.5rem;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: #ffffffb0;
+  }
+  .card__contact__btn--close {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    font-size: 5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--cores-fontes);
+  }
+  .home__card--btn {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
