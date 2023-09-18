@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <script defer src="observe.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script defer src="/javaScript/script.js"></script>
     <title>Virgelis Style</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
       <div class="header">
         <img src="img/logo4-preview.png" alt="logo virgelis" class="logo-img" />
         <nav class="navigation">
-          <a href="#" class="home">Preços</a>
+          <a href="#" class="home home__header--show">Preços</a>
           <a href="#" class="contato card--contact--show">contato</a>
         </nav>
       </div>
@@ -29,18 +29,18 @@
     <main class="page">
       <!-- information  -->
       <section class="section--1">
-        <!-- background is increase by css but here it's one div line -->
-        <div class="background-img"></div>
         <div class="title">
-          <h1>Alisamento de calidade</h1>
-          <p>A um preço accessível, conquistando seu novo look!</p>
-        </div>
-        <div class="preço">
-          <p>
-            Invista menos tempo no seu alisamento e venha alisar e hidratar seus
-            cabelos.
+          <h1>Alisamento perfeito</h1>
+          <p id="title-last-child">
+            conquistando seu novo look, a um preço accessível,!
           </p>
-          <p>Faz uma consultoria comigo!</p>
+          <div class="preço">
+            <p>
+              Invista menos tempo no seu alisamento e venha alisar e hidratar
+              seus cabelos.
+            </p>
+            <p>Faz uma consultoria comigo!</p>
+          </div>
         </div>
       </section>
 
@@ -48,16 +48,32 @@
         <div>
           <div class="Price-box">
             <p>A partir de</p>
-            <h1 class="rs">100R$</h1>
+            <h1 class="rs">R$130</h1>
           </div>
 
           <div class="Typewr-H1">
             <h1 class="h1-class">Faça Seu Orçamento</h1>
           </div>
         </div>
-        <div class="Mastercard-ways">
-          <div class="crcl-deco"></div>
-          <img src="img/Untitleddesign.jpg" alt="woman smilling" />
+        <div>
+          <iframe
+            class="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9uXpflF0ejY?loop=1&autoplay=1"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+
+          <div class="crcl-deco">
+            <a href="https://wa.me/message/SHK2BGGD7FS6M1" target="_blank">
+              <img
+                src="icons/icons-whatsapp.png"
+                alt="icon instagram"
+                class="ball"
+              />
+            </a>
+          </div>
         </div>
       </section>
       <!--Carrusel-->
@@ -170,7 +186,7 @@
         <div class="info">
           <h3 id="info-title">Contato</h3>
           <ul id="info-list">
-            <li>(+55) 11121 1113 141</li>
+            <li>(+55) 41-8504-75-91</li>
             <li>Curitiba, Brazil</li>
           </ul>
         </div>
@@ -179,27 +195,24 @@
           <h3>Redes Sociais</h3>
           <div class="footer-btns">
             <button>
-              <img src="icons/instagram.png" alt="" class="footer-icon1" />
+              <a href="https://instagram.com/virgelisstyle/" target="_blank">
+                <img src="icons/instagram.png" alt="" class="footer-icon1"
+              /></a>
             </button>
 
             <button>
-              <img
-                src="icons/whatsapp.png"
-                alt="whatsap"
-                class="footer-icon2"
-              />
+              <a href="https://wa.me/message/SHK2BGGD7FS6M1" target="_blank">
+                <img
+                  src="icons/whatsapp.png"
+                  alt="whatsap"
+                  class="footer-icon2"
+              /></a>
             </button>
 
             <button>
-              <img src="icons/gmail.png" alt="gmail" class="footer-icon3" />
-            </button>
-
-            <button>
-              <img
-                src="icons/oie_516501Oz113xQg.png"
-                alt="OLX"
-                class="footer-icon4"
-              />
+              <a href="mailto:virgelisstyle@gmail.com" target="_blank">
+                <img src="icons/gmail.png" alt="gmail" class="footer-icon3"
+              /></a>
             </button>
           </div>
         </div>
@@ -220,20 +233,20 @@
       <button class="card__contact__btn--close">&times;</button>
       <ul class="card__contact--ul">
         <li class="card__contact--list">
-          <a href="https://web.whatsapp.com/" target="_blank">
+          <a href="https://wa.me/message/SHK2BGGD7FS6M1" target="_blank">
             <img src="icons/whatsapp.png" alt="whatsap" class="icons__card" />
-            2317-203-2039
+            (+55)41-8504-75-91
           </a>
         </li>
 
         <li class="card__contact--list">
-          <a href="https://mail.google.com/mail/u/0/" target="_blank">
+          <a href="mailto:virgelisstyle@gmail.com" target="_blank">
             <img src="icons/gmail.png" alt="gmail" class="icons__card" />
-            emailvirgelis@gmail.com
+            virgelisstyle@gmail.com
           </a>
         </li>
         <li class="card__contact--list">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://instagram.com/virgelisstyle/" target="_blank">
             <img
               src="icons/instagram.png"
               alt="icon instagram"
@@ -241,16 +254,29 @@
             />VirgelisStyle
           </a>
         </li>
-        <li class="card__contact--list">
-          <a href="https://www.instagram.com/" target="_blank">
-            <img
-              src="icons/oie_516501Oz113xQg.png"
-              alt="icon OLX"
-              class="icons__card"
-            />VirgelisStyle
-          </a>
-        </li>
       </ul>
+    </div>
+    <div class="home__header hidden">
+      <div class="home__card--btn">
+        <button class="card__contact__btn--close price__btn">&times;</button>
+        <h2>Hoje a partir de</h2>
+        <h1 class="rs">130R$</h1>
+        <button>
+          <a href="https://wa.me/message/SHK2BGGD7FS6M1" target="_blank">
+            <img src="icons/whatsapp.png" alt="whatsap" class="footer-icon2"
+          /></a>
+        </button>
+        <button>
+          <a href="mailto:virgelisstyle@gmail.com" target="_blank">
+            <img src="icons/gmail.png" alt="gmail" class="footer-icon3"
+          /></a>
+        </button>
+        <button>
+          <a href="https://instagram.com/virgelisstyle/" target="_blank">
+            <img src="icons/instagram.png" alt="" class="footer-icon1"
+          /></a>
+        </button>
+      </div>
     </div>
     <div class="background__blur hidden"></div>
   </body>
